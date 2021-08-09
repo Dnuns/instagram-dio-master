@@ -1,105 +1,76 @@
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+*, body{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-family: sans-serif;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  font-size: .75rem;
-  padding: 8px 8px;
-}
-
-a {
+ul,ol,li, a {
   text-decoration: none;
-  color: grey;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+.container{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color:#fafafa;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+.main {
+  display: flex;
+  margin: 0 auto;
+  align-items:flex-start;
+  justify-content:center;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+.form-info-a, .form-info-b{
+  background-color: white;
+  text-align: center;
+  padding: 20px 80px;
+  border: 1px solid rgb(224, 219, 219);
 }
 
-body{
-  background-color: #f3f3f3;
-  font-size: .85rem;
+.b-app, .form-img, footer{
+  text-align: center;
 }
 
-.container {
+.phone img {
+  max-width: 280px;
+  min-width: 280px;
+}
+
+.insta-logo {
+  width: 170px;
+}
+
+.form-img img {
+  width: 130px;
+}
+
+.footer-lang-cp{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+/* =========================================== */
+
+/* .container {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 90% 10%;
   grid-template-areas: 
-    "p p p p p p i i i i i i"
-    "f f f f f f f f f f f f";
+    "p  i"
+    "f f";
 
   max-width: 100vw;
   height: auto;
   margin: 0 auto;
-}
+} */
+/* .phone {
 
-.phone {
   grid-area: p;
   position: relative;
 }
@@ -110,20 +81,21 @@ body{
 
 .footer {
  grid-area: f;
- margin: 9rem auto .5rem auto;
+ margin: 10rem auto .5rem auto;
  display: grid;
- grid-template-columns: repeat(12,1fr);
- grid-template-rows: 1fr 1fr;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2,1fr);
  grid-template-areas: 
-  "l l l l l l l l l l l l"
-  "s s s s s s c c c c c c";
+  "l  l"
+  "s  c";
 }
 
 .phone img {
-  width: 600;
-  height: 600;
+  max-width: 680px;
+  min-width: 680px;
   position: absolute;
-  left: 11rem;
+  left: 20rem;
+  top:3rem
 }
 
 .form-img :nth-child(1) {
@@ -143,27 +115,32 @@ body{
   flex-direction: column;
   align-content: center;
   justify-content: left;
-  margin-top: 10.5rem;
+  margin-top: 9rem;
 }
 
 .form-info-a [alt="instagram profile photo"] {
   border-radius: 50%;
   margin-bottom: 1rem;
+  width: 85px;
 }
 
 .form-info-a, .form-info-b {
   background-color: white;
-  max-width: 400px;
+  max-width: 350px;
   border: 1px solid rgb(209, 205, 205);
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.insta-logo {
+  width: 170px;
+}
+
 .form-img {
-  max-width: 400px;
+  max-width: 350px;
   display: flex;
   justify-content: center;
   gap: .8rem;
@@ -171,10 +148,11 @@ body{
 
 .form-img img {
   margin-top: .5rem;
+  width: 130px;
 }
 
 .b-app{
-  max-width: 400px;
+  max-width: 350px;
   text-align: center;
 }
 
@@ -183,7 +161,7 @@ body{
   font-size: .70rem;
   color: gray;
   white-space: nowrap;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .footer-lang{
@@ -201,3 +179,73 @@ body{
   font-size: .70rem;
   color: gray;
 }
+
+/* media queries */
+/* 
+@media (max-width: 1600px) {
+  .phone img {
+    display: none;
+  }  
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+      "i i"
+      "f f";
+  }
+
+  .info{
+    justify-self: center;
+  }
+  
+} 
+
+@media (max-width: 900px) {
+
+  body{
+    background-color: white;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .phone img {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+      "i i"
+      "f f";
+
+    overflow-x: hidden;
+  }
+
+  .info{
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+  .form-info-a, .form-info-b {
+    border: none;
+  }
+
+  .footer{
+    margin: 0 auto;
+    text-align: center;
+    justify-self: center;
+  }
+  .footer-links {
+    white-space:normal;
+    margin-bottom: .7rem;
+  }
+
+  .footer-links, .footer-cpr {
+    text-align: center;
+  }
+} */
