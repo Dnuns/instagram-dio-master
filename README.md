@@ -1,10 +1,31 @@
-# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
+# Instagram login interface clone
 
-Esse é o repositório da nossa aula de Flexbox, na qual vamos fazer a interface de login do Instagram! 
+This project is a challenge from the DIO (Digital Inovation One) bootcamp, in which we are going to recreate the Instagram login interface.
 
-### Os requisitos são:
+### About this project
 
-* [HTML básico](https://www.w3schools.com/html/)
-* [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+This project was created in order to practice my skills with HTML and CSS.
 
-## 🚀 Let's code! 🚀
+
+## Tech Stack
+
+<img alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /><img alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+
+  
+## Demo
+
+![portfolio desktop screenshot](img/instagram_clone.gif)
+  
+## Screenshots
+
+#### Desktop view
+
+![portfolio desktop screenshot](img/desktop.png)
+
+#### Resposive view
+
+![portfolio resposive screenshot](img/responsive.png)
+  
+## Author
+
+- [David Nunes](https://www.github.com/Dnuns)
