@@ -19,10 +19,9 @@ ul,ol,li, a {
 
 .main {
   display: flex;
-  margin: 0 auto;
+  margin: 6rem auto 6rem auto;
   align-items:flex-start;
   justify-content:center;
-  margin-top: 6rem;
 }
 
 .info {
@@ -56,9 +55,10 @@ ul,ol,li, a {
 }
 
 .phone img {
-  max-width: 290px;
-  min-width: 290px;
+  max-width: 295px;
+  min-width: 295px;
   margin-right: 1.5rem;
+  margin-top: .8rem;
 }
 
 .insta-logo {
@@ -66,7 +66,7 @@ ul,ol,li, a {
 }
 
 .form-img img {
-  width: 130px;
+  width: 135px;
 }
 
 .footer-links a {
@@ -102,7 +102,24 @@ ul,ol,li, a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: .5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .main{
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .form-img img  {
+    margin-top: .1rem;
+  }
 }
 
 /* =========================================== */
