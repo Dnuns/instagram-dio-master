@@ -22,13 +22,33 @@ ul,ol,li, a {
   margin: 0 auto;
   align-items:flex-start;
   justify-content:center;
+  margin-top: 6rem;
+}
+
+.info {
+  margin-top: 2rem;
 }
 
 .form-info-a, .form-info-b{
   background-color: white;
   text-align: center;
-  padding: 20px 80px;
+  padding: 30px 80px;
   border: 1px solid rgb(224, 219, 219);
+}
+
+.form-info-a {
+  margin-bottom: .5rem;
+}
+
+.insta-logo {
+  width: 170px;
+  margin-bottom: 1rem;
+}
+
+.form-info-a [alt="instagram profile photo"] {
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+  width: 85px;
 }
 
 .b-app, .form-img, footer{
@@ -36,8 +56,9 @@ ul,ol,li, a {
 }
 
 .phone img {
-  max-width: 280px;
-  min-width: 280px;
+  max-width: 290px;
+  min-width: 290px;
+  margin-right: 1.5rem;
 }
 
 .insta-logo {
@@ -48,10 +69,39 @@ ul,ol,li, a {
   width: 130px;
 }
 
+.footer-links a {
+  font-size: .75rem;
+  white-space: nowrap;
+  padding: 10px 7px;
+  color: grey;
+}
+
+.footer-lang{
+  font-size: .65rem;
+  color: gray;
+  outline: none;
+}
+
+.footer-lang select {
+  color: grey;
+  border: none;
+  background-color: #fafafa;
+  font-size: .75rem;
+}
+
+.footer-lang select option {
+  color: black;
+}
+
+.footer-cpr {
+  font-size: .70rem;
+  color: gray;
+}
+
 .footer-lang-cp{
   display: flex;
   justify-content: center;
-  gap: .5rem;
+  gap: 1rem;
   margin-top: .5rem;
 }
 
