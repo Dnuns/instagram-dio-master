@@ -21,10 +21,6 @@ This project was created in order to practice my skills with HTML and CSS.
 #### Desktop view
 
 ![portfolio desktop screenshot](img/desktop.png)
-
-#### Resposive view
-
-![portfolio resposive screenshot](img/responsive.png)
   
 ## Author
 
