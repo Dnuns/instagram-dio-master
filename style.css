@@ -71,14 +71,11 @@ ul,ol,li, a {
 
 .footer-links a {
   font-size: .75rem;
-  white-space: nowrap;
-  padding: 10px 7px;
   color: grey;
 }
 .footer-lang{
   font-size: .65rem;
   color: gray;
-  outline: none;
 }
 
 .footer-lang select {
