@@ -13,7 +13,7 @@ This project was created in order to practice my skills with HTML and CSS.
 
 ## Link
 
-https://instagram-dio-master.vercel.app/
+https://instagram-dio-master.vercel.app
 
   
 ## Demo
